@@ -1,0 +1,541 @@
+/* ========================================
+   RESPONSIVE STYLES - responsive.css
+   Media queries for all screen sizes
+   ======================================== */
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .doctor-img {
+        width: 320px;
+        height: 400px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctor-profile {
+        gap: 40px;
+    }
+
+    .testimonial-card {
+        min-width: calc(50% - 20px);
+    }
+
+    .map-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .map-info-card {
+        padding: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-grid {
+        gap: 40px;
+    }
+
+    .doctor-cv {
+        grid-template-columns: 300px 1fr;
+    }
+
+    .gallery-grid {
+        grid-auto-rows: 200px;
+    }
+
+    .service-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet Small - 768px */
+@media (max-width: 768px) {
+
+    /* Top Bar */
+    .top-bar-left span:last-child {
+        display: none;
+    }
+
+    .emergency-btn span {
+        display: none;
+    }
+
+    /* Navigation */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        padding: 80px 30px 30px;
+        gap: 0;
+        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid var(--light);
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        display: block;
+        font-size: 1.05rem;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 0 100px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        margin: 0 auto 25px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-mini-stats {
+        justify-content: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .doctor-img {
+        width: 280px;
+        height: 350px;
+    }
+
+    .floating-card.card-1 {
+        left: 0;
+        top: 10%;
+    }
+
+    .floating-card.card-2 {
+        right: 0;
+        bottom: 10%;
+    }
+
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat-card {
+        padding: 25px 15px;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    /* Services */
+    .services-section {
+        padding: 70px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Doctor */
+    .doctor-profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .doctor-image-frame img {
+        height: 400px;
+    }
+
+    .doctor-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-info .btn {
+        margin: 0 auto;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        min-width: 100%;
+    }
+
+    /* Map */
+    .map-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    /* About Page */
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .story-image img {
+        height: 350px;
+    }
+
+    .doctor-cv {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-image img {
+        min-height: 350px;
+    }
+
+    .cv-content {
+        padding: 30px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 180px;
+    }
+
+    .gallery-item.large {
+        grid-column: span 1;
+    }
+
+    /* Services Page */
+    .service-detail-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-meta {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA */
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+        padding: 6px 0;
+        font-size: 0.75rem;
+    }
+
+    .top-bar .container {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .top-bar-left {
+        gap: 10px;
+    }
+
+    .social-icons {
+        gap: 8px;
+    }
+
+    /* Hero */
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .doctor-img {
+        width: 220px;
+        height: 280px;
+    }
+
+    .floating-card {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+
+    .floating-card i {
+        font-size: 1.2rem;
+    }
+
+    .floating-card div strong {
+        font-size: 1rem;
+    }
+
+    .floating-card div span {
+        font-size: 0.7rem;
+    }
+
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 20px 10px;
+    }
+
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .section-header p {
+        font-size: 0.9rem;
+    }
+
+    .section-tag {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+
+    /* Page Hero */
+    .page-hero {
+        padding: 60px 0 40px;
+    }
+
+    .page-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    /* Doctor */
+    .doctor-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .highlight {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+
+    /* About */
+    .story-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .experience-badge strong {
+        font-size: 2rem;
+    }
+
+    .cv-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+    }
+
+    /* Services Detail */
+    .service-detail-card {
+        padding: 20px;
+    }
+
+    .service-detail-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    /* FAQ */
+    .faq-question {
+        padding: 15px 18px;
+    }
+
+    .faq-question span {
+        font-size: 0.9rem;
+    }
+
+    /* CTA */
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-content p {
+        font-size: 0.95rem;
+    }
+
+    /* Contact */
+    .form-header {
+        padding: 20px;
+    }
+
+    .appointment-form {
+        padding: 20px;
+    }
+
+    .contact-card {
+        padding: 18px;
+    }
+
+    .whatsapp-cta {
+        padding: 15px 18px;
+    }
+
+    /* Map */
+    .full-map-wrapper iframe {
+        height: 300px;
+    }
+
+    /* WhatsApp Float */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .back-to-top {
+        bottom: 80px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 0 0;
+    }
+
+    .footer-logo {
+        font-size: 1.3rem;
+    }
+}
+
+/* Extra Small - 360px */
+@media (max-width: 360px) {
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-mini-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-img {
+        width: 180px;
+        height: 230px;
+    }
+}
